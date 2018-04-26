@@ -7,7 +7,8 @@
 //
 
 #import "ViewController.h"
-
+#import <OHHTTPStubs/OHHTTPStubs.h>
+#import <AFNetworking.h>
 @interface ViewController ()
 
 @end
@@ -17,6 +18,21 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
+    [OHHTTPStubs stubRequestsPassingTest:^BOOL(NSURLRequest * _Nonnull request) {
+        return YES;
+    } withStubResponse:^OHHTTPStubsResponse * _Nonnull(NSURLRequest * _Nonnull request) {
+        NSBundle *bundle = [NSBundle bundleForClass:[self class]];
+        NSString *fixture = [bundle pathForResource:@"example"
+                                             ofType:@"json"];
+        return [OHHTTPStubsResponse responseWithFileAtPath:fixture statusCode:200 headers:@{@"Content-Type":@"application/json"}];
+    }];
+    AFHTTPSessionManager *manager = [AFHTTPSessionManager manager];
+    [manager GET:@"https://idont.know"
+      parameters:nil
+        progress:nil
+         success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
+             NSLog(@"%@", responseObject);
+         } failure:nil];
 }
 
 

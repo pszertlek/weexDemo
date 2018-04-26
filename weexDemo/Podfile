@@ -7,7 +7,8 @@ target 'weexDemo' do
 
   # Pods for weexDemo
    pod 'WeexSDK', '~> 0.17.0'
-
+   pod 'AFNetworking'
+pod 'OHHTTPStubs', '~> 6.1.0'
   target 'weexDemoTests' do
     inherit! :search_paths
     # Pods for testing

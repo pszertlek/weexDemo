@@ -23,10 +23,10 @@
     [WXAppConfiguration setAppVersion:@"1.0.0"];
     [WXSDKEngine initSDKEnvironment];
     //register custom module and component，optional
-    [WXSDKEngine registerComponent:@"MyView" withClass:[MyViewComponent class]];
-    [WXSDKEngine registerModule:@"event" withClass:[WXEventModule class]];
+    [WXSDKEngine registerComponent:@"MyView" withClass:[WXListComponent class]];
+//    [WXSDKEngine registerModule:@"event" withClass:[WXEventModule class]];
     //register the implementation of protocol, optional
-    [WXSDKEngine registerHandler:[WXNavigationDefaultImpl new] withProtocol:@protocol(WXNavigationProtocol)];
+//    [WXSDKEngine registerHandler:[WXNavigationDefaultImpl new] withProtocol:@protocol(WXNavigationProtocol)];
     //set the log level
     [WXLog setLogLevel: WXLogLevelAll];
     

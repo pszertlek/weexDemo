@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		18AF5197206A4BD80009C20C /* example.json in Resources */ = {isa = PBXBuildFile; fileRef = 18AF5196206A4BD80009C20C /* example.json */; };
 		18BD4ED3200731C000FEDCC7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 18BD4ED2200731C000FEDCC7 /* AppDelegate.m */; };
 		18BD4ED6200731C000FEDCC7 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 18BD4ED5200731C000FEDCC7 /* ViewController.m */; };
 		18BD4ED9200731C000FEDCC7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18BD4ED7200731C000FEDCC7 /* Main.storyboard */; };
@@ -30,6 +31,7 @@
 
 /* Begin PBXFileReference section */
 		04D7DA0E3B353B0954830C28 /* libPods-weexDemoTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-weexDemoTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		18AF5196206A4BD80009C20C /* example.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = example.json; sourceTree = "<group>"; };
 		18BD4ECE200731C000FEDCC7 /* weexDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = weexDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		18BD4ED1200731C000FEDCC7 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		18BD4ED2200731C000FEDCC7 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -117,6 +119,7 @@
 				18BD4ED2200731C000FEDCC7 /* AppDelegate.m */,
 				18BD4ED4200731C000FEDCC7 /* ViewController.h */,
 				18BD4ED5200731C000FEDCC7 /* ViewController.m */,
+				18AF5196206A4BD80009C20C /* example.json */,
 				18BD4ED7200731C000FEDCC7 /* Main.storyboard */,
 				18BD4EDA200731C000FEDCC7 /* Assets.xcassets */,
 				18BD4EDC200731C000FEDCC7 /* LaunchScreen.storyboard */,
@@ -223,6 +226,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				18AF5197206A4BD80009C20C /* example.json in Resources */,
 				18BD4EDE200731C000FEDCC7 /* LaunchScreen.storyboard in Resources */,
 				18BD4EDB200731C000FEDCC7 /* Assets.xcassets in Resources */,
 				18BD4ED9200731C000FEDCC7 /* Main.storyboard in Resources */,
